@@ -1,0 +1,22 @@
+/* ta02.css */
+
+.stc-first {
+	background-color: #2e5257;
+	font-size: 2em;
+}
+
+.stc-later {
+	font-size: 2em;
+}
+
+#hue2 {
+	background-color: #97a9ac;
+}
+
+#hue3 {
+	background-color: #aec3c7;
+}
+
+.hover-bold:hover {
+	font-weight: bold;
+}
