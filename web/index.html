@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Assignment - Personal Homepage</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Language" content="en-us" />
+		<meta name="Robots" content="Follow, Index" />
+		<meta name="Distribution" content="Worldwide" />
+		<meta name="Rating" content="General" />
+
+		<meta name="DESCRIPTION" content="My Personal Homepage. Assignments will be linked from here" />
+		<meta name="KEYWORDS" content="Computer Science, CSE 341, PHP, Web Engineering II, BYU-Idaho, Personal Homepage" />
+		<meta name="Author" content="Joseph Itiose" />
+		<meta name="School" content="BYU-Idaho" />
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="content/main.css" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="scripts/main.js"></script>
+
+	</head>
+	<body>
+		<div class="container body-content">
+
+			<!-- Begin Navbar Include -->
+			<div id="MenuNav"></div>
+			<script>
+				document.getElementById("MenuNav").innerHTML = readTextFile( "navbar.php" );				
+			</script>
+			<!-- End Navbar Include -->
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div class="jumbotron">
+						<h1>Assignment - Personal Homepage</h1>
+						<p class="guide">This page is to be used as a guide for assignments and various requirements for CSE 341.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="bio" class="col-md-12 panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#bio" href="#bio1">About Joseph Itiose</a>
+								</h4>
+							</div>
+							<div id="bio1" class="panel-collapse collapse">
+								<div class="row">
+									<div class="col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-6 col-lg-offset-0">
+										<div class="panel panel-info" style="border-width: 2px;">
+											<div class="panel-heading">
+												<h3 class="panel-title" style="font-weight: bolder;">
+													Joseph Itiose - CSE 341 Class
+												</h3>
+											</div>
+											<div class="panel-body">
+												<div class="col-md-2">
+													<img class="HomePageImage img-responsive" src="images\.jpg" alt="Joseph Itiose on Priesthood atire" title="Joseph Itiose" />
+												</div>
+												<div class="col-md-10">
+													<p>
+														I would like to briefly introduce myself: I am Joseph Itiose, a sales representative with a pharmacy that distribute for pharmaceutical companys.  I am one who is always looking to improve and channel a new way that will spur me to greatness. looking at the world today and how important it is to gain knowledge and skills in the technology industry I have decided to learn technical skills that will enable me become relevant to myself and the society at large. I am new in the software and development engeineering with minimal or no experience at all, except for the knowledge gain during my course of study here in Brigham Young University. Some of the things I enjoy doing is reading and getting myself informed of happenings around the globe. An habit I like to instill in my family life so they form the habit of reading as it help one to be always alive to happenings in the society and enviroment in which we live or find ourselves.
+													</p>
+												
+													<p>
+														Source code and files can be found at <a href="https://github.com/joejoe2009/cs313-php" target="_blank">CSE 341 Git Repo</a>
+													</p>
+												</div>
+											</div>
+											<div class="panel-footer">
+												<div style="font-size: smaller;">
+													&nbsp;
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                            
+                            <div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#bio" href="#assignments">Prove Assignments</a>
+								</h4>
+							</div>
+							<div id="assignments" class="panel-collapse collapse">
+								<ul class="list-group">
+									<li class="list-group-item">
+										<a href="hello.html" >Hello</a>
+									</li>
+									<li class="list-group-item">
+										<a href="title.html" >week 02</a>
+									</li>
+									<li class="list-group-item">
+										<a href="Coming Soon" >week 03</a>
+									</li>
+									<li class="list-group-item">
+										<a href="Coming Soon" >Week 04</a>
+									</li>
+									<li class="list-group-item">
+										<a href="Coming Soon">CS 313 Week 05</a>
+									</li>
+								</ul>
+                           </div> 
+                           
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+                            
+    </body>
+</html>
+                        
