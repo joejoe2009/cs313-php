@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cart</title>
-    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="css/shcar.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 	<main>
@@ -40,14 +40,13 @@
 							?>
 
 					<tr>
-						<td colspan="5" align=right><strong>Total:</strong> <?php echo "$".$item_total; ?></td>
+						<td colspan="5" $align=right><strong>Total:</strong> <?php echo "$".$item_total; ?></td>
 					</tr>
 				</tbody>
 			</table>		
-			<?php
-			}
-			?>
+
 			</div>
+		</div>
 			<div class="txt-headingout"><a id="btnCheckout" href="index.php?action=checkout">Check out</a></div>
 		</main>
 </body>
