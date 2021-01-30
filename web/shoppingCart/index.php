@@ -20,33 +20,33 @@ switch($action) {
 			$itemArray = array($productByCode["code"]=>array('name'=>$productByCode["name"], 'code'=>$productByCode["code"], 'quantity'=>$_POST["quantity"], 'price'=>$productByCode["price"]));
 		
 			
-			if(!empty($_SESSION["cart_item"])) {
-				if(in_array($product_array[0]["code"],array_keys($_SESSION["cart_item"]))) {
-					foreach($_SESSION["cart_item"] as $k => $v) {
+			if(!empty($_SESSION["viewCart_item"])) {
+				if(in_array($product_array[0]["code"],array_keys($_SESSION["viewCart_item"]))) {
+					foreach($_SESSION["viewCart_item"] as $k => $v) {
 							if($product_array[0]["code"] == $k) {
-								if(empty($_SESSION["cart_item"][$k]["quantity"])) {
-									$_SESSION["cart_item"][$k]["quantity"] = 0;
+								if(empty($_SESSION["viewCart_item"][$k]["quantity"])) {
+									$_SESSION["viewCart_item"][$k]["quantity"] = 0;
 								}
-								$_SESSION["cart_item"][$k]["quantity"] += $_POST["quantity"];
+								$_SESSION["viewCart_item"][$k]["quantity"] += $_POST["quantity"];
 							}
 					}
 				} else {
-					$_SESSION["cart_item"] = array_merge($_SESSION["cart_item"],$itemArray);
+					$_SESSION["viewCart_item"] = array_merge($_SESSION["viewCart_item"],$itemArray);
 				}
 			} else {
-				$_SESSION["cart_item"] = $itemArray;
+				$_SESSION["viewCart_item"] = $itemArray;
 			}
 		}
 		include 'browse.php';
 	break;
 	
 	case "remove":
-		if(!empty($_SESSION["cart_item"])) {
-			foreach($_SESSION["cart_item"] as $k => $v) {
+		if(!empty($_SESSION["viewCart_item"])) {
+			foreach($_SESSION["viewCart_item"] as $k => $v) {
 					if($_GET["code"] == $k)
-						unset($_SESSION["cart_item"][$k]);				
-					if(empty($_SESSION["cart_item"]))
-						unset($_SESSION["cart_item"]);
+						unset($_SESSION["viewCart_item"][$k]);				
+					if(empty($_SESSION["viewCart_item"]))
+						unset($_SESSION["viewCart_item"]);
 			}
 		}
 		include 'browse.php';
@@ -83,7 +83,7 @@ switch($action) {
 	break;
 
 	case "empty":
-		unset($_SESSION["cart_item"]);
+		unset($_SESSION["viewCart_item"]);
 		include 'browse.php';
 	break;	
 	

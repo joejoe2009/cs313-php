@@ -12,16 +12,16 @@
 		<div id="shopping-cart">
 		<?php 
 			
-			if(empty($_SESSION["cart_item"])) {
+			if(empty($_SESSION["viewCart_item"])) {
 				$count = "";
 			} else {
 				
-				$count = "(" . count($_SESSION["cart_item"]) . ")";
+				$count = "(" . count($_SESSION["viewCart_item"]) . ")";
 			}
 		?>
 			<div class="txt-heading">Shopping Cart <a id="btnView" href="index.php?action=view">View Cart <?php echo $count; ?></a><a id="btnEmpty" href="index.php?action=empty">Empty Cart</a></div>
 			<?php
-				if(isset($_SESSION["cart_item"])){
+				if(isset($_SESSION["viewCart_item"])){
 					$item_total = 0;
 				}
 			?>
