@@ -17,7 +17,7 @@ session_start(); ?>
 			<?php
 				if(isset($_SESSION["viewCart_item"])){
 					$item_total = 0; }
-					echo $_SESSION["viewCart_item"] ."items";
+					echo $_SESSION["viewCart_item"]["code"]."items";
 					//echo $item_total ."items";
 			?>	
 			<table cellpadding="10" cellspacing="1">
