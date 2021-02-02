@@ -1,6 +1,5 @@
 <?php
-session_start();
-echo "We are here"; ?>
+session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +15,10 @@ echo "We are here"; ?>
 			<div class="txt-heading">Shopping Cart <a id="btnView" href="index.php?action=browse">Browse</a><a id="btnEmpty" href="index.php?action=empty">Empty Cart </a></div>
 
 			<?php
-			echo "we are here again";
 				if(isset($_SESSION["cart_item"])){
 					$item_total = 0; }
+					echo $_SESSION["cart_item"] ."items";
+					//echo $item_total ."items";
 			?>	
 			<table cellpadding="10" cellspacing="1">
 				<tbody>
