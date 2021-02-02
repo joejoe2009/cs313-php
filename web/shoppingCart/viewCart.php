@@ -1,5 +1,6 @@
 <?php
-session_start(); ?>
+session_start();
+echo "We are here"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
