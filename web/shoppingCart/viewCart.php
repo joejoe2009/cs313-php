@@ -18,7 +18,7 @@ echo "We are here"; ?>
 			<?php
 			echo "we are here again";
 				if(isset($_SESSION["cart_item"])){
-					$item_total = 0;
+					$item_total = 0; }
 			?>	
 			<table cellpadding="10" cellspacing="1">
 				<tbody>
