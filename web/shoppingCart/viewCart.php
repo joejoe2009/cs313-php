@@ -17,7 +17,7 @@ session_start(); ?>
 			<?php
 				if(isset($_SESSION["viewCart_item"])){
 					$item_total = 0; }
-					echo $_SESSION["viewCart_item"][0]["quantity"] ."items";
+					//echo $_SESSION["viewCart_item"][0]["quantity"] ."items";
 					//echo $item_total ."items";
 			?>	
 			<table cellpadding="10" cellspacing="1">
@@ -31,7 +31,7 @@ session_start(); ?>
 					</tr>	
 
 					<?php		
-						foreach ($_SESSION["cart_item"] as $item){
+						foreach ($_SESSION["viewCart_item"] as $item){
 							?>
 									<tr>
 										<td style="text-align:left;border-bottom:#F0F0F0 1px solid;"><strong><?php echo $item["name"]; ?></strong></td>
