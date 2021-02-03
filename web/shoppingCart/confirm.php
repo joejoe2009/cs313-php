@@ -13,7 +13,7 @@ session_start(); ?>
     <main>
 
         <?php
-            if(isset($_SESSION["cart_item"])){
+            if(isset($_SESSION["viewCart_item"])){
                 $item_total = 0;
         ?>
         <div class="txt-headingout">

@@ -14,7 +14,7 @@ session_start(); ?>
         <div id="shopping-cart">
             <div class="txt-heading"><a id="btnView" href="index.php?action=browse">Browse</a><a id="btnEmpty" href="index.php?action=empty">Empty Cart</a></div>
             <?php
-                if(isset($_SESSION["cart_item"])){
+                if(isset($_SESSION["viewCart_item"])){
                     $item_total = 0;
             ?>	
             <table cellpadding="10" cellspacing="1">
