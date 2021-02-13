@@ -3,7 +3,8 @@ function get_db()
 {
   try {
 
-    echo getenv('DATABASE_URL');
+    $dbUrl = getenv('DATABASE_URL');
+    echo $dbUrl;
   
   } catch (PDOException $ex) {
     // for debugging only not for production site
