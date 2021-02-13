@@ -4,7 +4,7 @@ function get_db()
   try {
 
     $dbUrl = getenv('DATABASE_URL');
-    echo $dbUrl;
+    // echo $dbUrl;
 
     if (!isset($dbUrl) || empty($dbUrl)) {
       // example localhost configuration URL with 
