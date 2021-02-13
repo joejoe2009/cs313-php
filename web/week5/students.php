@@ -1,6 +1,6 @@
 <?php
 require 'connection.php';
-get_db() function created in connection.php
+//get_db() function created in connection.php
 $db = get_db();
 session_start();
 ?>
