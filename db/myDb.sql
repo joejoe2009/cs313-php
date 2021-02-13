@@ -1,3 +1,6 @@
+Drop table if exists assignments;
+Drop table if exists courses;
+Drop table if exists students;
 CREATE TABLE students (
     id          SERIAL PRIMARY KEY,
     name        varchar(64),
@@ -17,4 +20,14 @@ CREATE TABLE assignments (
     duedate     date,
     courseid      int REFERENCES courses (id) NOT NULL,
     studentid     int REFERENCES students (id) NOT NULL
-)
+);
+
+
+
+INSERT INTO students (name, username, password) VALUES
+    ('Jossy', 'jossy202187', 'longtry');
+
+INSERT INTO courses (name, studentid) VALUES
+    ('Web Backend Development I', 1),
+    ('Web Backend Developmet II', 1),
+    ('Web Frontend Development II', 1);
