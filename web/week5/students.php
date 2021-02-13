@@ -23,7 +23,19 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             $username = $row['username'];
             $password = $row['password'];
             echo "<p><strong>$name $username $password</strong><p>";
+
+            if($search_name == $row['name']) {
+                array_push($nameArray, $row['name']);
+                array_push($nameArray, $row['username']);
+                array_push($nameArray, $row['password']);
             } 
+            if($search_username == $row['username']) {
+                array_push($nameArray, $row['name']);
+                array_push($nameArray, $row['username']);
+                array_push($nameArray, $row['password']);
+            } 
+​
+            }
 
 ?>
 </body>
