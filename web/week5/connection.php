@@ -4,10 +4,10 @@ function get_db()
   try {
     // default Heroku Postgres configuration URL
     // this is a built in function in php to get the value from an enviornment variable
-    $dbUrl = getenv('DATABASE_URL');
+    //$dbUrl = getenv('DATABASE_URL');
 ​
     // Get the various parts of the DB Connection from the URL
-    $dbopts = parse_url($dbUrl);
+    $dbopts = parse_url(getenv('DATABASE_URL'));
 ​
     $dbHost = $dbopts["host"];
     $dbPort = $dbopts["port"];
