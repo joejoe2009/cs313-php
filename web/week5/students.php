@@ -36,5 +36,11 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             } 
 ​
 ?>
+
+    <nav>
+    <li></li>
+    <li></li>
+    <li></li>
+    </nav>
 </body>
 </html>
