@@ -34,6 +34,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                 array_push($nameArray, $row['username']);
                 array_push($nameArray, $row['password']);
             } 
+        }
 ​
 ?>
 
