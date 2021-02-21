@@ -27,11 +27,11 @@ foreach($students as $row)
             $password = $row['password'];
             echo "<p><strong>$name $username $password</strong><p>";
 
-            if($search_name == $row['name'] || $search_username == $row['username']) {
-                array_push($nameArray, $row['name']);
-                array_push($nameArray, $row['username']);
-                array_push($nameArray, $row['password']);
-            } 
+            // if($search_name == $row['name'] || $search_username == $row['username']) {
+            //     array_push($nameArray, $row['name']);
+            //     array_push($nameArray, $row['username']);
+            //     array_push($nameArray, $row['password']);
+            // } 
         }
 
 
@@ -63,6 +63,7 @@ value="male">Male
 <input type="radio" name="gender"
 <?php if (isset($gender) && $gender=="other") echo "checked";?>
 value="other">Other
+<input type="submit">
 </form>
 
     <nav>
