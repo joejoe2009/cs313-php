@@ -19,7 +19,7 @@ function iam($name){
     //  $stmt->closeCursor();
     return "name3";
 }
-var_dump(function_exists('iam'));
+//var_dump(function_exists('iam'));
 echo "name 2" . $name; 
  ​echo iam($name);
 // if($success){
