@@ -1,5 +1,6 @@
 <?php
 include ("../main-model.php");
+require_once '/app/web/week5/connection.php';
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
 $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
