@@ -7,17 +7,17 @@ $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
 
 function iam($name, $username, $password){
-    $db = get_db();
-    echo "name" . $name;
-    $sql = 'INSERT INTO students (name, username, password) VALUES (:name, :username, :password )';
-    $stmt = $db->prepare($sql);
-    $stmt->bindValue(':name', $name, PDO::PARAM_STR);
-    $stmt->bindValue(':username', $username, PDO::PARAM_STR);
-    $stmt->bindValue(':password', $password, PDO::PARAM_STR);
-    $stmt->execute();
-     $rowsChanged = $stmt->rowCount();
-     $stmt->closeCursor();
-    return $rowsChanged;
+    // $db = get_db();
+    // echo "name" . $name;
+    // $sql = 'INSERT INTO students (name, username, password) VALUES (:name, :username, :password )';
+    // $stmt = $db->prepare($sql);
+    // $stmt->bindValue(':name', $name, PDO::PARAM_STR);
+    // $stmt->bindValue(':username', $username, PDO::PARAM_STR);
+    // $stmt->bindValue(':password', $password, PDO::PARAM_STR);
+    // $stmt->execute();
+    //  $rowsChanged = $stmt->rowCount();
+    //  $stmt->closeCursor();
+    return true;
 }
 var_dump(function_exists('iam'));
 echo "name 2" . $name; 
