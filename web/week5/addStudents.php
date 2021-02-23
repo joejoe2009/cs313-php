@@ -19,6 +19,7 @@ function insertstudents($name, $username, $password){
      $stmt->closeCursor();
     return $rowsChanged;
 }
+var_dump(function_exists('insertstudents'));
 echo "name 2" . $name; 
  ​insertstudents($name, $username, $password);
 // if($success){
