@@ -19,7 +19,7 @@ function insertstudents($name, $username, $password){
     return $rowsChanged;
 }
 echo "name 2" . $name; 
-// ​$success = insertstudents($name, $username, $password);
+ ​echo insertstudents($name, $username, $password);
 // if($success){
 //  header('location: ./students.php');
 //  } else{
