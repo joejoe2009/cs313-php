@@ -17,7 +17,7 @@ function iam($name){
     // $stmt->execute();
     //  $rowsChanged = $stmt->rowCount();
     //  $stmt->closeCursor();
-    return true;
+    return "name3";
 }
 var_dump(function_exists('iam'));
 echo "name 2" . $name; 
