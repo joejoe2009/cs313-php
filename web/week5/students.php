@@ -49,7 +49,6 @@ foreach($students as $row)
         
         pswword: <input type="text" name="password" value="<?php echo $password;?>">
         
-        Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
 
         Gender:
 <input type="radio" name="gender"
