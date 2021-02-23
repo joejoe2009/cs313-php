@@ -21,7 +21,7 @@ function iam($name){
 }
 var_dump(function_exists('iam'));
 echo "name 2" . $name; 
- ​iam($name, $username, $password);
+ ​echo iam($name);
 // if($success){
 //  header('location: ./students.php');
 //  } else{
