@@ -28,3 +28,5 @@ echo "name 2" . $name;
 //      header('location: ./students.php');
 //  }
 
+?>
+
