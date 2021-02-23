@@ -1,12 +1,12 @@
 <?php
 include ('/app/web/main-model.php');
 require_once '/app/web/week5/connection.php';
-$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-$username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
-$password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
+$name = "name"; //filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+// $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
+// $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
 
-function iam($name, $username, $password){
+function iam($name){
     // $db = get_db();
     // echo "name" . $name;
     // $sql = 'INSERT INTO students (name, username, password) VALUES (:name, :username, :password )';
