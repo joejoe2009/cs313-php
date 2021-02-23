@@ -6,7 +6,7 @@ $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
 
-function insertstudents($name, $username, $password){
+function iam($name, $username, $password){
     $db = get_db();
     echo "name" . $name;
     $sql = 'INSERT INTO students (name, username, password) VALUES (:name, :username, :password )';
@@ -19,9 +19,9 @@ function insertstudents($name, $username, $password){
      $stmt->closeCursor();
     return $rowsChanged;
 }
-var_dump(function_exists('insertstudents'));
+var_dump(function_exists('iam'));
 echo "name 2" . $name; 
- ​insertstudents($name, $username, $password);
+ ​iam($name, $username, $password);
 // if($success){
 //  header('location: ./students.php');
 //  } else{
