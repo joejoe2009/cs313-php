@@ -18,7 +18,7 @@ $password =  $_POST['password'];
     //  $rowsChanged = $stmt->rowCount();
     //  $stmt->closeCursor();
     //return "name3";
-}
+//}
 //var_dump(function_exists('iam'));
 echo "name 2" . $name; 
  ​echo iam($name);
