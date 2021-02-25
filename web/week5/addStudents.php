@@ -20,8 +20,8 @@ $password =  $_POST['password'];
     //return "name3";
 //}
 //var_dump(function_exists('iam'));
-echo "name 2" . $name; 
- ​echo iam($name);
+//echo "name 2" . $name; 
+ ​//echo iam($name);
 
  $success = insertstudents($name, $username, $password);
 echo $success;
