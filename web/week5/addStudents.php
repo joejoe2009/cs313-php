@@ -1,12 +1,12 @@
 <?php
 include ('/app/web/main-model.php');
 require_once '/app/web/week5/connection.php';
-$name = "name"; //filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-// $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
-// $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
+$name = $_POST['name'];
+$username = $_POST['username'];
+$password =  $_POST['password'];
 
 
-function iam($name){
+//function iam($name)
     // $db = get_db();
     // echo "name" . $name;
     // $sql = 'INSERT INTO students (name, username, password) VALUES (:name, :username, :password )';
@@ -17,11 +17,14 @@ function iam($name){
     // $stmt->execute();
     //  $rowsChanged = $stmt->rowCount();
     //  $stmt->closeCursor();
-    return "name3";
+    //return "name3";
 }
 //var_dump(function_exists('iam'));
 echo "name 2" . $name; 
  ​echo iam($name);
+
+ $success = insertstudents($name, $username, $password);
+echo $success;
 // if($success){
 //  header('location: ./students.php');
 //  } else{
