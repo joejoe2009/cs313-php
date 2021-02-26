@@ -23,7 +23,7 @@ $password =  $_POST['password'];
 //echo "name 2" . $name; 
  ​//echo iam($name);
 
- $success = insertstudents($name, $username, $password);
+$success = insertstudents($name, $username, $password);
 echo $success;
 // if($success){
 //  header('location: ./students.php');
