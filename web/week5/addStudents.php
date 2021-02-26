@@ -1,5 +1,5 @@
 <?php
-include ('/app/web/main-model.php');
+include ('/app/web/model/main-model.php');
 require_once '/app/web/week5/connection.php';
 $name = $_POST['name'];
 $username = $_POST['username'];
