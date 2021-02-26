@@ -11,11 +11,11 @@ $password =  $_POST['password'];
 $success = insertstudents($name, $username, $password);
 echo "success = " . $success;
 
-// if($success){
-//  header('location: ./students.php');
-//  } else{
-//      header('location: ./students.php');
-//  }
+ if($success){
+ header('location: ./students.php');
+ } else{
+    header('location: ./students.php');
+ }
 
 ?>
 
