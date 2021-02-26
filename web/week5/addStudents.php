@@ -22,7 +22,7 @@ function insertstudents($name, $username, $password){
 
 
 $success = insertstudents($name, $username, $password);
-echo $success;
+echo "success = " . $success;
 
 // if($success){
 //  header('location: ./students.php');
