@@ -6,7 +6,7 @@ $username = $_POST['username'];
 $password =  $_POST['password'];
 
 echo $name;
-/*function insertstudents($name, $username, $password){
+function insertstudents($name, $username, $password){
     $db = get_db();
     $sql = 'INSERT INTO students (name, username, password) VALUES (:name, :username, :password )';
     $stmt = $db->prepare($sql);
@@ -22,7 +22,8 @@ echo $name;
 
 
 $success = insertstudents($name, $username, $password);
-echo $success;*/
+echo $success;
+
 // if($success){
 //  header('location: ./students.php');
 //  } else{
