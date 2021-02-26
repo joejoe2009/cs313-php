@@ -1,24 +1,24 @@
 <?php
-include ('/app/web/model/main-model.php');
+//include ('/app/web/model/main-model.php');
 require_once '/app/web/week5/connection.php';
 $name = $_POST['name'];
 $username = $_POST['username'];
 $password =  $_POST['password'];
 
 
-//function iam($name)
-    // $db = get_db();
-    // echo "name" . $name;
-    // $sql = 'INSERT INTO students (name, username, password) VALUES (:name, :username, :password )';
-    // $stmt = $db->prepare($sql);
-    // $stmt->bindValue(':name', $name, PDO::PARAM_STR);
-    // $stmt->bindValue(':username', $username, PDO::PARAM_STR);
-    // $stmt->bindValue(':password', $password, PDO::PARAM_STR);
-    // $stmt->execute();
-    //  $rowsChanged = $stmt->rowCount();
-    //  $stmt->closeCursor();
-    //return "name3";
-//}
+function insertstudents($name, $username, $password){
+    $db = get_db();
+    $sql = 'INSERT INTO students (name, username, password) VALUES (:name, :username, :password )';
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':name', $name, PDO::PARAM_STR);
+    $stmt->bindValue(':username', $username, PDO::PARAM_STR);
+    $stmt->bindValue(':password', $password, PDO::PARAM_STR);
+    $stmt->execute();
+     $rowsChanged = $stmt->rowCount();
+     $stmt->closeCursor();
+     echo "insertStudents";
+    return $rowsChanged;
+}
 //var_dump(function_exists('iam'));
 //echo "name 2" . $name; 
  ​//echo iam($name);
