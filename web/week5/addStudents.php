@@ -5,8 +5,8 @@ $name = $_POST['name'];
 $username = $_POST['username'];
 $password =  $_POST['password'];
 
-
-function insertstudents($name, $username, $password){
+echo $name;
+/*function insertstudents($name, $username, $password){
     $db = get_db();
     $sql = 'INSERT INTO students (name, username, password) VALUES (:name, :username, :password )';
     $stmt = $db->prepare($sql);
@@ -19,12 +19,10 @@ function insertstudents($name, $username, $password){
      echo "insertStudents";
     return $rowsChanged;
 }
-//var_dump(function_exists('iam'));
-//echo "name 2" . $name; 
- ​//echo iam($name);
+
 
 $success = insertstudents($name, $username, $password);
-echo $success;
+echo $success;*/
 // if($success){
 //  header('location: ./students.php');
 //  } else{
