@@ -22,6 +22,7 @@ function insertstudents($name, $username, $password){
     $stmt->execute();
      $rowsChanged = $stmt->rowCount();
      $stmt->closeCursor();
+     echo "insertStudents";
     return $rowsChanged;
 }
 
