@@ -1,6 +1,6 @@
 body {
     
-    background-color: antiquewhite;
+    background-color: rgb(131, 94, 47);
 }
 
 .form-group {
@@ -10,7 +10,7 @@ body {
 
   .form-check{
 
-    width: 100%;
+    width: 70%;
     padding: 16px 20px;
     border: none;
     border-radius: 4px;
@@ -19,7 +19,7 @@ body {
   }
 
   input[type=text] {
-    width: 100%;
+    width: 70%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
