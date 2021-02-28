@@ -1,6 +1,8 @@
 body {
     
     font-family: calibri;
+    background-color: antiquewhite;
+    opacity: 0.3;
 }
 
 .form-group {
