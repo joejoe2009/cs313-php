@@ -63,15 +63,23 @@ foreach($students as $row)
         
 
         Gender:
-<input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="female") echo "checked";?>
-value="female">Female
-<input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="male") echo "checked";?>
-value="male">Male
-<input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="other") echo "checked";?>
-value="other">Other
+    <div class="form-check">
+   <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="gender" value=<?php if (isset($gender) && $gender=="female") echo "checked";?>>Female
+  </label>
+</div>
+
+<div class="form-check">
+<label class="form-check-label">
+<input type="radio" class="form-check-input" name="gender" value=<?php if (isset($gender) && $gender=="male") echo "checked";?>>Male
+</label>
+</div>
+
+<div class="form-check">
+<label class="form-check-label">
+<input type="radio" class="form-check-input" name="gender" value=<?php if (isset($gender) && $gender=="other") echo "checked";?>>Other
+</label>
+</div>
 <input type="submit">
 </form>
 
