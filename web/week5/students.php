@@ -9,6 +9,9 @@ session_start();
 <html>
 <head>
 <title>Students</title>
+<link rel="stylesheet" href="css/pr.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -43,11 +46,20 @@ foreach($students as $row)
 ?>
 
 <form method="post" action="./addStudents.php">
-        Name: <input type="text" name="name" value="<?php echo $name;?>">
+  <div class="form-group">
+  <label for="name">Name:</label>
+     <input type="text" name="name" value="<?php echo $name;?>">
+ </div>
 
-        Username: <input type="text" name="username" value="<?php echo $username;?>">
+ <div class="form-group">
+  <label for="username">Username:</label>
+    <input type="text" name="username" value="<?php echo $username;?>">
+    </div>
         
-        pswword: <input type="text" name="password" value="<?php echo $password;?>">
+<div class="form-group">
+ <label for="password">Passwword:</label>
+ <input type="text" name="password" value="<?php echo $password;?>">
+</div>
         
 
         Gender:
