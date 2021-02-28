@@ -82,10 +82,6 @@ foreach($students as $row)
 <input type="submit">
 </form>
 
-    <nav>
-    <li></li>
-    <li></li>
-    <li></li>
-    </nav>
+
 </body>
 </html>
